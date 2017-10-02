@@ -79,6 +79,11 @@ class UserCOntroller extends Controller
         return response()->json($workers);
     }
 
+    public function skills() {
+        $user = User::whereEmail(\request()->input("email"))->first();
+        return response()->json($user->works);
+    }
+
     public function addSkills()
     {
         $user = User::whereEmail(\request()->input("email"))->first();

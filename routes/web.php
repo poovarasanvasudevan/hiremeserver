@@ -18,3 +18,4 @@ Route::post('/user/register', 'UserCOntroller@register');
 Route::get('/me', 'UserCOntroller@me');
 Route::get('/workers', 'UserCOntroller@workers');
 Route::post('/user/addSkills', 'UserCOntroller@addSkills');
+Route::post('/user/skills', 'UserCOntroller@addSkills');
